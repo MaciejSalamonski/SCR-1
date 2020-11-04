@@ -16,5 +16,10 @@ do odczytu. Po zakonczeniu okna terminala (zakonczeniu procesu do odczytu), nie 
 na inne okna terminali. Jesli zakonczono okno do zapisu, wszystkie okna do odczytu rowniez
 sie zakonczyly
 
+EX_5
 
+Program jest oodporny na cztery sygnaly wymienione w zadaniu: SIGINT, SIGQUIT, SIGFPE, SIGILL.
+Wywolanie sygnalu SIGINT mozliwe jest tylko z termina, w ktorym uruchomiony jest biezacy proces.
+Dla skryptu za pomoca skrotu klawiszowego ctrl c. Program nie moze byc odporny na sygnal
+SIGKILL.
 
