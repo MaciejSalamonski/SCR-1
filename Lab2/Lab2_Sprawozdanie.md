@@ -7,6 +7,14 @@ Poleceniem pgrep sshd | wc -l mozmemy pokazac aktualna liczbe procesow sshd. Nie
 na panamincie, wiec uzylem komendy pgrep root | wc -l, aby pokazac aktualna liczbe procesow
 root'a.
 
-EX_2
+EX_4
+
+Utworzono potok poleceniem mknod fifo p. Nastepnie otworzono cztery terminale. W okienku
+pierwszym wydano polecenie pisania do potoku tzn. cat > fifo. W trzech pozostalych do odczytu.
+Podczas wpisywania jakis danych do potoku, byly one umieszczane losowo do roznych procesow
+do odczytu. Po zakonczeniu okna terminala (zakonczeniu procesu do odczytu), nie wplynelo to
+na inne okna terminali. Jesli zakonczono okno do zapisu, wszystkie okna do odczytu rowniez
+sie zakonczyly
+
 
 
