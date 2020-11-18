@@ -1,4 +1,4 @@
-1 #!/bin/bash
+#!/bin/bash
 ## ctrl c - SIGINT,
 
 fileName=${0##*/}
