@@ -1,3 +1,0 @@
-Command:
-
-mknod fifo p
