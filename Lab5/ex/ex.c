@@ -5,15 +5,15 @@
 #include <sys/stat.h> /* fstat() */
 #include <unistd.h>   /* pipe(), fork() */
 
-#define ROZM_P 128    /* Maksymalna dlugosc nazwy pliku */
+#define FILE_SIZE 128 /* Maksymalna dlugosc nazwy pliku */
 struct stat fileStat; /* Dane zmapowanego pliku */
 
 int main(void) {
-    char fileName[ROZM_P];     /* Nazwa wczytywanego pliku */
+    char fileName[FILE_SIZE];  /* Nazwa wczytywanego pliku */
+    char* mapPtr;              /* Pamiec dla zmapowania plikow */
+    int counter;               /* Counter zczytanych bitow */
     int firstFile, secondFile; /* Deskryptory plikow */
     pid_t childProcess;        /* Do procesu potomnego */
-    int counter;               /* Counter zczytanych bitow */
-    char* mapPtr;              /* Pamiec dla zmapowania plikow */
 
     childProcess = fork(); /* Klonowanie procesu */
 
