@@ -6,12 +6,13 @@
 #include <unistd.h>   /* pipe(), fork() */
 
 #define FILE_SIZE 128 /* Maksymalna dlugosc nazwy pliku */
+#define CHILD_PROCESS 0 /* Proces dziecko */
 struct stat fileStat; /* Dane zmapowanego pliku */
 
 int main(void) {
     char fileName[FILE_SIZE];  /* Nazwa wczytywanego pliku */
     char* mapPtr;              /* Pamiec dla zmapowania plikow */
-    int counter;               /* Counter zczytanych bitow */
+    int counter;               /* Licznik zczytanych bitow */
     int firstFile, secondFile; /* Deskryptory plikow */
     pid_t childProcess;        /* Do procesu potomnego */
 
@@ -20,7 +21,7 @@ int main(void) {
     if (childProcess < 0) { /* Nie udalo sie utworzyc podprocesu - wyjdz z programu */
         perror("Nie udało utworzyć sie podprocesu!\n");
         exit(-1);
-    } else if (childProcess == 0) {                                      /* ========Dziecko======== */
+    } else if (childProcess == CHILD_PROCESS) {                          /* ========Dziecko======== */
         execlp("display", "display", "-update", "1", "mapka.png", NULL); /* Wywolaj display i wyswietl obrazek z pliku 2 */
     } else {                                                             /* ===========Rodzic=========== */
         while (1) {
