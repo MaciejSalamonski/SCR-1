@@ -1,4 +1,4 @@
-Dla czytelniejszego dokumentu prosze zaznaczyc opcje "Display the rich diff" ------>
+Dla czytelniejszego dokumentu prosze zaznaczyc opcje "Display the rich diff" ----------------------------------------->
 
 # EX_1
 
@@ -79,7 +79,8 @@ za pomoca muteksow.
 
 # EX_3
 
-Kiedy przekazywany jest jeden argument to program rzutuje na wskaznik typu void kopie zmiennej, a dla wielu argumentow (tez nastapi rzutowanie wskaznika) przekazywana jest referencja do zmiennej. Ponizej przedstawiono outputy dla kolejnych skompilowanych kodow zrodlowych: hello_arg1.c, hello_arg2.c.
+Kiedy przekazywany jest jeden argument to program rzutuje na wskaznik typu void kopie zmiennej, a dla wielu argumentow (tez nastapi rzutowanie wskaznika) 
+przekazywana jest referencja do zmiennej. Ponizej przedstawiono outputy dla kolejnych skompilowanych kodow zrodlowych: hello_arg1.c, hello_arg2.c.
 
 ## Output programu hello_arg1.out
 ---
