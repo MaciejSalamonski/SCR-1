@@ -2,8 +2,9 @@
 
 Zostal napisany prosty program myhello.c, ktory tworzy piec watkow w petli. Skompilowany przy uzyciu flag: -o, -ptherad
 
-OUTPUT:
-
+## Output
+---
+```
 Creating thread number: 0 
 Creating thread number: 1 
 Creating thread number: 2 
@@ -13,7 +14,8 @@ Hello from thread number: 4
 Hello from thread number: 3 
 Hello from thread number: 2 
 Hello from thread number: 1 
-Hello from thread number: 0 
+Hello from thread number: 0
+```
 
 Nastepnie skompilowano i uruchomiono program hello.c. Uzyto tych samych flag.
 
