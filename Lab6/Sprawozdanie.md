@@ -19,8 +19,9 @@ Hello from thread number: 0
 
 Nastepnie skompilowano i uruchomiono program hello.c. Uzyto tych samych flag.
 
-OUTPUT:
-
+## Output
+---
+```
 In main: creating thread 0
 In main: creating thread 1
 In main: creating thread 2
@@ -31,12 +32,14 @@ Hello World! It's me, thread #3!
 Hello World! It's me, thread #2!
 Hello World! It's me, thread #1!
 Hello World! It's me, thread #0!
+```
 
 Programy zachowuja sie dosc podobnie. Problem polega w tym, ze poprawnosc dzialania jest "pozorna". Po kilkukrotnym
 uruchomieniu powyzszych programow mozemy otrzymac ponizsze wyniki:
 
-Przykladowy output programu hello.c
-
+## Przykladowy output programu hello.c
+---
+```
 In main: creating thread 0
 In main: creating thread 1
 In main: creating thread 2
@@ -47,9 +50,10 @@ Hello World! It's me, thread #3!
 Hello World! It's me, thread #0!
 Hello World! It's me, thread #2!
 Hello World! It's me, thread #1!
-
-Przykladowy output programu myhello.c
-
+```
+## Przykladowy output programu myhello.c
+---
+```
 Creating thread number: 0
 Creating thread number: 1
 Creating thread number: 2
@@ -60,7 +64,7 @@ Hello from thread number: 3
 Hello from thread number: 2
 Hello from thread number: 0
 Hello from thread number: 1
-
+```
 Wywolujac programy kilkukrotnie mozemy zauwazyc, ze watki moga pojawiac sie w innej kolejnosci. Jest to niepozadane zjawisko
 i moze byc wyeliminowane przez elementy synchronizujace (muteksy).
 
