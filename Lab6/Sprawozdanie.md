@@ -1,4 +1,4 @@
-EX_1
+# EX_1
 
 Zostal napisany prosty program myhello.c, ktory tworzy piec watkow w petli. Skompilowany przy uzyciu flag: -o, -ptherad
 
