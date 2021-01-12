@@ -1,3 +1,5 @@
+Dla czytelniejszego dokumentu prosze zaznaczyc opcje "Display the rich diff" ------>
+
 # EX_1
 
 Zostal napisany prosty program myhello.c, ktory tworzy piec watkow w petli. Skompilowany przy uzyciu flag: -o, -ptherad
